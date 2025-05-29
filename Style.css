@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #121212; /* Dark background for gamer aesthetic */
+    color: #fff; /* White text for readability */
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./Image/149A7238.JPG'); /* Ensure the relative path is correct */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+#header {
+    background: #1a1a1a; /* Darker header for contrast */
+    color: #fff;
+    padding: 40px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav img.logo {
+    width: 120px;
+    border-radius: 50%; /* Rounded logo for a modern look */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff6347; /* Neon accent color */
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.header-subtitle {
+    font-size: 20px;
+    font-weight: 300;
+    color: #ff6347; /* Neon accent color */
+    margin-bottom: 10px;
+}
+
+.header-title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.header-title span {
+    color: #00ff7f; /* Neon green for gamer aesthetic */
+}
+
+#about {
+    padding: 80px 0;
+    background: #1a1a1a; /* Dark background for consistency */
+    color: #ccc; /* Light gray text for readability */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.about-col-2 {
+    flex: 2;
+    padding: 20px;
+}
+
+.sub-title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #ff6347; /* Neon accent color */
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #00ff7f; /* Neon green accent */
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-content ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-content ul li span {
+    color: #ff6347; /* Neon accent color */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Add specific styles for the Experience tab content */
+#experience p {
+    color: #ccc; /* Light gray text for readability */
+    font-size: 16px;
+    line-height: 1.6; /* Improve readability with proper line spacing */
+    margin: 10px 0;
+}
+
+/* Add specific styles for the Contact tab content */
+#contact p {
+    color: #ccc; /* Light gray text for readability */
+    font-size: 16px;
+    line-height: 1.6; /* Improve readability with proper line spacing */
+    margin: 10px 0;
+}
+
+#contact ul li a {
+    color: #00ff7f; /* Neon green for links */
+    text-decoration: none;
+}
+
+#contact ul li a:hover {
+    text-decoration: underline; /* Add underline on hover for better visibility */
+}
+
+footer {
+    background: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}

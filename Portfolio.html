@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melie's Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="opentab('skills')">Home</a></li>
+                    <li><a href="#" onclick="opentab('experience')">About</a></li>
+                    <li><a href="#" onclick="opentab('contact')">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p class="header-subtitle">Aspiring Game Developer</p>
+                <h1 class="header-title">Hi, I'm <span>Melie Joshua</span><br>from Bells University of Technology</h1>
+            </div>
+        </div>
+    </div>  
+    <!--------about------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Image/149A7222.JPG" class="about-image" alt="About Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                    I'm 100 Level Computer Science Student from Bells University of Technology that passionate about becoming an Aspiring Game Developer. I'm currently learning Javascript, HTML and CSS which makes me to create website for my gaming contents.
+                    Being an aspiring game dev make me to have ideas of game mechanism, game engine and others.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('contact')">Contact</p>
+                    </div>
+                    <div class="tab-content active tab" id="skills">
+                        <ul>
+                            <li><span>Game Developer</span><br>Creating Game and making Game engine</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Software Engineering</span><br>Designing Software</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <p>
+                            I have been to NetEase IT internship for 2 months of work and experience that teaches making a game program set that sorts data and information of each new coming players. It gave me insight into making a game for the base level of a beginner.
+                        </p>
+                    </div>
+                    <div class="tab-content" id="contact">
+                        <h1 class="sub-title">Contact</h1>
+                        <p>
+                            Feel free to reach out to me for collaboration or inquiries! You can contact me via:
+                        </p>
+                        <ul>
+                            <li><span>Email:</span> meliejoshua@example.com</li>
+                            <li><span>Phone:</span> +123-456-7890</li>
+                            <li><span>LinkedIn:</span> <a href="https://linkedin.com/in/meliejoshua" target="_blank">linkedin.com/in/meliejoshua</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontent = document.getElementsByClassName("tab-content");
+
+    function opentab(tabname) {
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (let tab of tabcontent) {
+            tab.classList.remove("active");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active");
+    }
+</script>
+</body>
+</html>
